@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 1) !important;
+    font-family: 'Shadows Into Light' !important;
+
+}
+
+h1,
+button,
+.amatic,
+.flip-card-back li {
+    font-family: 'Amatic SC', cursive !important;
+}
+
+.shadowsintolight {
+    font-family: 'Shadows Into Light', cursive !important;
+}
+
+section:not(.sec1, .sec8) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    padding: 100px 5vw;
+}
+
+.sec1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 100px 5vw;
+}
+
+section h1,
+section p {
+    color: white;
+}
+
+.sec1 {
+    min-height: 100px;
+}
+
+.sec1 #mainheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    transition: 0.3s;
+}
+
+.sec1 #mainheading:hover {
+    font-size: 130px;
+    color: #e5d3b3 !important;
+    cursor: pointer;
+}
+
+.hovereffect {
+    font-size: 70px;
+    transition: 0.3s;
+}
+
+.hovereffect:hover {
+    font-size: 75px;
+    color: #e5d3b3 !important;
+    cursor: pointer;
+}
+
+.spacer1 {
+    width: 100%;
+    aspect-ratio: 1397/450;
+    background: no-repeat center;
+    background-size: cover;
+}
+.spacer2 {
+    width: 100%;
+    aspect-ratio: 1397/350;
+    background: no-repeat center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(stacked-peaks-haikei.svg);
+}
+
+.layer2 {
+    background-image: url(wave-haikei.svg);
+}
+
+.layer3 {
+    background-image: url(stacked-peaks-haikei-about.svg);
+}
+
+.layer4 {
+    background-image: url(stacked-peaks-haikei-bookblogs.svg);
+}
+
+.brown {
+    background-color: #231704;
+}
+
+.tortilla {
+    background-color: #9a7b4f;
+}
+
+.cream {
+    background-color: #f2dabd;
+}
+
+.gingerbread {
+    background-color: #5E2C04;
+}
+
+.tawny {
+    background-color: #80471c;
+}
+
+.maroon {
+    background-color: #804;
+}
+
+.green {
+    background-color: #038373;
+}
+
+.text-brown {
+    color: #231704;
+}
+
+.border-3 {
+    border-width: 3px !important;
+}
+
+#nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0%;
+    overflow: hidden;
+    background-color: #4a3728;
+
+}
+
+#nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#nav a:hover {
+    background-color: #9a7b4f;
+    color: white;
+}
+
+.active {
+    background-color: #9a7b4f;
+    color: white;
+}
+
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    height: 100%;
+    width: 0%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+}
+
+.overlay a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: grey;
+    font-size: 60px;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: white;
+}
+
+.overlay .closeBtn {
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.bold {
+    font-weight: 600 !important;
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 8px #504f4f;
+}
+
+.sec8 div div ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.sec8 div div ul li:first-child {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.sec8 div div ul li a {
+    text-decoration: none;
+    color: white;
+    transition:0.3s;
+    font-family: 'Amatic SC', cursive !important;
+}
+
+.sec8 div div ul li a:hover {
+    text-decoration: none;
+    color: violet;
+}
+
+/* Signup Window */
+.overlay1 {
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    height: 0%;
+    width: 50%;
+    top: 10px;
+    z-index: 1;
+    transition: 0.5s;
+    overflow-y: hidden;
+}
+
+.overlay-content1 form {
+    position: relative;
+    top: 25%;
+    text-align: left;
+    width: 100%;
+}
+
+.overlay-content1 form {
+    display: block;
+    width: 90%;
+    padding: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.overlay-content1 form a {
+    display: block;
+    width: 90%;
+    padding: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
+    transition: 0.3s;
+}
+
+.overlay-content1 form a:hover,
+.overlay-content1 form a:focus {
+    color: white;
+}
+
+.closeBtn1 {
+    font-size: 50px;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 0px;
+    right: 45px;
+}
+
+.closeBtn1:hover {
+    color: red;
+}
+
+div>a {
+    text-decoration: none;
+    color: white;
+    transition:0.5s;
+}
+
+.sec8 div>a:hover {
+    color: violet;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+/* searchbox */
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+/* popup */
+
+.popup {
+    position: relative;
+    display: block;
+    z-index: 0;
+}
+
+.popup-content {
+    position: absolute;
+    min-width: 160px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    display: none;
+    background-color: #038373;
+    padding: 8px 25px;
+    transition: 2s;
+}
+.card img{
+    width:200px;
+    height:250px;
+}
+.card{
+    box-shadow:0px 0px 5px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-Bazaar: BookKave</title>
+
+    <style>
+        .sec1 {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(bookbazaar.jpg) no-repeat center;
+            background-size: cover;
+            height: 500px !important;
+        }
+        .sec2 {
+            background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 18, 32, 1)), url(bookbazaar.jpg) no-repeat center;
+            background-size: cover;
+            height: 500px !important;
+        }
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="flipcard.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dosis:wght@200&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="signup.js"></script>
+</head>
+
+<body>
+
+
+    <!-- signup form -->
+    <div class="d-flex align-items-center justify-content-center font-monospace">
+        <div id="mysignup" class="overlay1 rounded-4">
+            <a href="Javascript:void(0)" class="closeBtn1" onclick="closesignup()">&times;</a>
+
+            <div class="container overlay-content1 d-flex justify-content-center align-items-center mt-5">
+                <form class="mt-3" onsubmit="return validateForm()">
+                    <div class="mb-4 hstack">
+                        <label for="firstname" class="form-label mb-0 lh-1">First Name:</label>
+                        <input type="text" class="form-control mx-2" id="firstname" aria-describedby="firstname"
+                            placeholder="Harry">
+                        <label for="lastname" class="form-label mb-0 lh-1">Last Name:</label>
+                        <input type="text" class="form-control" id="lastname" aria-describedby="lastname"
+                            placeholder="Potter">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label mb-0">Email address:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="email"
+                            placeholder="harry.potter@voldemortsucks.com">
+                        <div id="email" class="form-text fs-6">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="newpass" class="form-label mb-0">Create Password:</label>
+                        <input type="password " class="form-control" id="newpass" aria-describedby="newpass"
+                            placeholder="if password&lt;8ch ~ you==loser ">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label mb-0">Repeat Password:</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="check">
+                        <label class="form-check-label" for="check">Join the Kave! <span class="text-muted fs-6">Get
+                                special updates directly in your inbox.</span></label>
+                    </div>
+                    <button type="submit" class="btn btn-danger d-grid col-12 bold fs-2">Sign Up!</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- top nav -->
+    <div id="nav" class="row justify-content-center topnav">
+
+        <div class="col-auto "><a href="index.html">Home</a></div>
+        <div class="col-auto "><a href="about.html">About</a></div>
+        <div class="col-auto "><a href="bookblogs.html">Book-Blogs</a></div>
+        <div class="col-auto active"><a href="bookbazaar.html">Book-Bazaar</a></div>
+
+        <div class="col-auto ms-auto search-container d-flex align-items-center">
+
+            <form action="#" onsubmit="alert('Cant Search. You see, i am not a pro at javascript right now')">
+                <input type="text" placeholder="Search...." id="search" class="rounded-start">
+                <button type="submit" class="rounded-end"><i class="fa fa-search"></i></button>
+            </form>
+
+        </div>
+
+        <div class="vr text-white "></div>
+        <div class="col-auto"><a href="Javascript:void(0)" onclick="opensignup()">Sign-Up</a></div>
+    </div>
+    <div style="border-bottom:6px solid #9a7b4f;"></div>
+
+    <section class="sec1">
+        <div class="vstack">
+            <h1 class="display-1 ms-5">The</h1>
+            <h1 class="display-1 ms-5">Book</h1>
+            <h1 class="display-1 ms-5">Bazaar</h1>
+            <p></p>
+        </div>
+
+    </section>
+
+
+    
+    <section class="se mt-0 py-5">
+        <h1>FICTION</h1>
+
+        <div class="hstack">
+
+            <div class="card mx-auto">
+                <img src="darkmatter.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Dark Matter</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <img src="ove.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">A Man Called Ove</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <img src="sherlock.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Sherlock Holmes</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <img src="readyplayerone.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Ready Player One</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div></div>
+            
+                
+                    <h1>HARRY POTTER SERIES</h1>
+                    <div class="hstack">
+
+        
+            <div class="card mx-auto" style="width:15rem">
+                <img src="philos.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Harry Potter And The Philosopher's Stone</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width:15rem">
+                <img src="chamber.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Harry Potter And The Chamber Of Secrets</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width:15rem">
+                <img src="prison.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Harry Potter And The Prisoner Of Azkaban</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+            <div class="card mx-auto" style="width:15rem">
+                <img src="goblet.jpg" alt="" class="card-img-top w-100 rounded-top">
+                <div class="card-body">
+                    <h1 class="card-title text-dark">Harry Potter And The Goblet Of Fire</h1>
+                    <a href="" class="btn btn-success d-block">Buy Book</a>
+                </div>
+            </div>
+        </div>
+            <div class="hstack">
+                <div class="card mx-auto" style="width:15rem">
+                    <img src="pheonix.jpg" alt="" class="card-img-top w-100 rounded-top">
+                    <div class="card-body">
+                        <h1 class="card-title text-dark">Harry Potter And The Order Of Pheonix</h1>
+                        <a href="" class="btn btn-success d-block">Buy Book</a>
+                    </div>
+                </div>
+
+
+                <div class="card mx-auto" style="width:15rem">
+                    <img src="blood.jpg" alt="" class="card-img-top w-100 rounded-top">
+                    <div class="card-body">
+                        <h1 class="card-title text-dark">Harry Potter And The Half-Blood Prince</h1>
+                        <a href="" class="btn btn-success d-block">Buy Book</a>
+                    </div>
+                </div>
+                <div class="card mx-auto" style="width:15rem">
+                    <img src="death.jpg" alt="" class="card-img-top w-100 rounded-top">
+                    <div class="card-body">
+                        <h1 class="card-title text-dark">Harry Potter And The Deathly Hallows</h1>
+                        <a href="" class="btn btn-success d-block">Buy Book</a>
+                    </div>
+                </div>
+
+                <div class="card mx-auto" style="width:15rem">
+                    <img src="cur.jpg" alt="" class="card-img-top w-100 rounded-top">
+                    <div class="card-body">
+                        <h1 class="card-title text-dark">Harry Potter And The Cursed Child</h1>
+                        <a href="" class="btn btn-success d-block">Buy Book</a>
+                    </div>
+                </div></div>
+
+                <h1>LORDS OF RINGS SERIES</h1>
+
+                <div class="hstack">
+                    <div class="card mx-auto" style="width:15rem">
+                        <img src="hobbit.jpg" alt="" class="card-img-top w-100 rounded-top">
+                        <div class="card-body">
+                            <h1 class="card-title text-dark">The Hobbit</h1>
+                            <a href="" class="btn btn-success d-block">Buy Book</a>
+                        </div>
+                    </div>
+                    <div class="card mx-auto" style="width:15rem">
+                        <img src="fellow.jpg" alt="" class="card-img-top w-100 rounded-top">
+                        <div class="card-body">
+                            <h1 class="card-title text-dark">The Fellowship Of The Ring</h1>
+                            <a href="" class="btn btn-success d-block">Buy Book</a>
+                        </div>
+                    </div>
+                    <div class="card mx-auto" style="width:15rem">
+                        <img src="the.jpg" alt="" class="card-img-top w-100 rounded-top">
+                        <div class="card-body">
+                            <h1 class="card-title text-dark">The Two Towers</h1>
+                            <a href="" class="btn btn-success d-block">Buy Book</a>
+                        </div>
+                    </div>
+                    <div class="card mx-auto" style="width:15rem">
+                        <img src="king.jpg" alt="" class="card-img-top w-100 rounded-top">
+                        <div class="card-body">
+                            <h1 class="card-title text-dark">The Return Of The King</h1>
+                            <a href="" class="btn btn-success d-block">Buy Book</a>
+                        </div>
+                    </div></div>
+
+                    
+                    
+
+
+
+            
+
+            
+        
+        
+    </section>
+    
+
+    <div style="border-bottom:6px solid #fff;"></div>
+
+
+    <section class="sec8 text-bg-dark p-5 fs-3">
+
+        <div class="hstack amatic mb-3">
+            <div class="ms-auto"><a href="index.html">Home</a> </div>
+            <div class=" mx-4 vr"></div>
+            <div><a href="bookblogs.html">Book-Blogs</a> </div>
+            <div class=" mx-4 vr"></div>
+            <div><a href="bookbazaar.html">Book-Bazaar</a> </div>
+            <div class=" mx-4 vr"></div>
+            <div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a> </div>
+            <div class=" mx-4 vr"></div>
+            <div><a href="about.html">About</a> </div>
+        </div>
+
+        <div class="hstack amatic mb-5 fs-6">
+            <a href="" class="mx-2 ms-auto fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </a>
+
+            <a href="" class="mx-2 fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x"></i>
+            </a>
+
+            <a href="" class="mx-2 fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </a>
+
+            <a href="" class="mx-2 fa-stack">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </a>
+
+        </div>
+
+
+        <div class="hstack">
+            <div class="text-center">
+                <h1 class="display-3 amatic">BOOK-KAVE</h1>
+                <p class="small fs-6">Connecting the right readers with the right deals.</p>
+            </div>
+            <div class="mx-5 vr"></div>
+            <div class="mx-4">
+                <ul>
+                    <li>Links</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="bookblogs.html">Book-Blogs</a></li>
+                    <li><a href="bookbazaar.html">Book-Bazaar</a></li>
+                </ul>
+            </div>
+            <div class="mx-4">
+                <ul>
+                    <li>Support the Kave</li>
+                    <li><a href="#">Work with us</a></li>
+                    <li><a href="#">Donate old books</a></li>
+                    <li><a href="#">Buy us a Coffee</a></li>
+                    <li><a href="#">* we don't have more options *</a></li>
+                </ul>
+            </div>
+            <div class="mx-4">
+                <ul>
+                    <li>Contact Us</li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+
+
+</body>
+
+</html>
